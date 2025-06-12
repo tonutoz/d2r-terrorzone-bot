@@ -21,8 +21,7 @@ public class TerrorZoneScheduler {
 
     private static final String API_URL = "https://d2runewizard.com/api/terror-zone";
 
-    //@Scheduled(cron = "0 0 * * * *") // 매 정각
-    @Scheduled(fixedDelay = 60000L)
+    @Scheduled(cron = "0 0 * * * *") // 매 정각
     public void sendTerrorZoneUpdate() {
         try {
             Map<String, Object> response = restTemplate.getForObject(API_URL, Map.class);

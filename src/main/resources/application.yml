@@ -7,4 +7,4 @@ discord:
     url: https://discord.com/api/webhooks/1382540608194740346/QRvcrq-pM5t6DtTn_5DgKC30tWpgCSKJVI6iU2gWpU0tTLx9XpIfQE8uvJTCUKb0QNh3
 zone:
   meta:
-    url: https://your-downloadable-url/zone-meta-by-location.json
+    url: https://raw.githubusercontent.com/tonutoz/d2r-terrorzone-bot/master/src/main/resources/zone-meta-by-location.json
