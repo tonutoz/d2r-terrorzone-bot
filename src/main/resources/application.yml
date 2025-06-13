@@ -8,3 +8,6 @@ discord:
 zone:
   meta:
     url: https://raw.githubusercontent.com/tonutoz/d2r-terrorzone-bot/master/src/main/resources/zone-meta-by-location.json
+
+server:
+  port: 9911

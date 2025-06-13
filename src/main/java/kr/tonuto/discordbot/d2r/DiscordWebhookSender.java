@@ -20,13 +20,13 @@ public class DiscordWebhookSender {
 
     public void sendEmbedZoneAlert(ZoneAlert alert) {
         Map<String, Object> currentEmbed = Map.of(
-                "title", "🟢 현재: " + alert.getCurrentKo() + " (" + alert.getCurrentAct() + ") | 🕐 " + alert.getCurrentTimeStr() + " 기준",
+                "title", "🟢 현재: " + alert.getCurrentKo() + " (" + alert.getCurrentAct() + ") \n 🕐 " + alert.getCurrentTimeStr() + " 기준",
                 "description", "Tier : " + highlightTier(alert.getCurrentTier()),
                 "image", Map.of("url", alert.getCurrentImage())
         );
 
         Map<String, Object> nextEmbed = Map.of(
-                "title", "🟡 다음: " + alert.getNextKo() + " (" + alert.getNextAct() + ") | 🕑 " + alert.getNextTimeStr() + " 예고",
+                "title", "🟡 다음: " + alert.getNextKo() + " (" + alert.getNextAct() + ") \n 🕑 " + alert.getNextTimeStr() + " 예고",
                 "description", "Tier : " + highlightTier(alert.getNextTier()),
                 "image", Map.of("url", alert.getNextImage())
         );
